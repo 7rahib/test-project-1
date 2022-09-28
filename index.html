@@ -18,7 +18,7 @@
                     <input type="text" placeholder="Type long URL here" class="url-input">
                     <button class="url-button">Generate Short URL</button>
                 </div>
-                <p><strong>Your Short URL is:</strong> https://bit.ly/a4ex2f <a class="copy-btn">copy</a></p>
+                <p><strong>Your Short URL is:</strong> <a id="short-url">https://bit.ly/a4ex2f </a><button onclick="copyShortUrl()" class="copy-btn"> copy</button></p>
                 </div>
                 <div>
                     <h3 class="input-label">Write Short URL:</h3>
@@ -26,14 +26,14 @@
                     <input type="text" placeholder="Type short URL here" class="url-input">
                     <button class="url-button">Retrieve Long URL</button>
                 </div>
-                <p><strong>The Orginal URL is:</strong> https://google.com/very-long-url-path <a class="copy-btn">copy</a></p>
+                <p><strong>The Orginal URL is:</strong> <a id="long-url">https://google.com/very-long-url-path</a> <button onclick="copyLongUrl()" class="copy-btn">copy</button></p>
                 </div>
             </div>
         </div>
     </main>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="/index.js"></script>
 </body>
 </html>
